@@ -144,6 +144,30 @@ function topFunction() {
     <!--closing navigation tag-->
 </header>
 <!--end of navigation section-->
+	
+<!--beginning of progress bar-->
+<div id="myProgress">
+  <div id="myBar"></div>
+	var i = 0;
+function move() {
+  if (i == 0) {
+    i = 1;
+    var elem = document.getElementById("myBar");
+    var width = 1;
+    var id = setInterval(frame, 10);
+    function frame() {
+      if (width >= 100) {
+        clearInterval(id);
+        i = 0;
+      } else {
+        width++;
+        elem.style.width = width + "%";
+      }
+    }
+  }
+} 
+</div>
+<!--end of progress bar-->
 
 <!--main image-->
 <div class="container">

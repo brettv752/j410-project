@@ -140,51 +140,6 @@ function topFunction() {
                 </li>
             </ul>
         </nav>
-	<!--beginning of progress bar-->
-<div id="myProgress">
-  <div id="myBar">10%</div>
-	<script>var i = 0;
-function move() {
-  if (i == 0) {
-    i = 1;
-    var elem = document.getElementById("myBar");
-    var width = 10;
-    var id = setInterval(frame, 10);
-    function frame() {
-      if (width >= 100) {
-        clearInterval(id);
-        i = 0;
-      } else {
-        width++;
-        elem.style.width = width + "%";
-        elem.innerHTML = width + "%";
-      }
-    }
-  }
-} </script>
-  <div id="myBar"></div>
-	<script>var i = 0;
-function move() {
-  if (i == 0) {
-    i = 1;
-    var elem = document.getElementById("myBar");
-    var width = 1;
-    var id = setInterval(frame, 10);
-    function frame() {
-      if (width >= 100) {
-        clearInterval(id);
-        i = 0;
-      } else {
-        width++;
-        elem.style.width = width + "%";
-      }
-    }
-  }
-} 
-</script>
-</div>
-    <!--end of progress bar-->
-
     </div>
     <!--closing navigation tag-->
 </header>
@@ -304,12 +259,55 @@ function move() {
 </div>
 <!--end of infographic section-->
 
-<!--beginning of footer-->
-<footer>Site Name Here | San Luis Obispo, CA | <a href="mailto: bvollrat@calpoly.edu" target="_top">Send Email</a> | Copyright 2020 | Site by Brett Vollrath
-</footer>
-<!--end of footer-->
+<!--beginning of audio player-->
+  <!-- Top Info -->
+	  <div id="title">
+	    <span id="track"></span>
+	    <div id="timer">0:00</div>
+	    <div id="duration">0:00</div>
+	  </div>
 
-</body>
+  <!-- Controls -->
+	  <div class="controlsOuter">
+ 	   <div class="controlsInner">
+ 	     <div id="loading"></div>
+ 	     <div class="btn" id="playBtn"></div>
+	      <div class="btn" id="pauseBtn"></div>
+ 	     <div class="btn" id="prevBtn"></div>
+	      <div class="btn" id="nextBtn"></div>
+ 	   </div>
+	    <div class="btn" id="playlistBtn"></div>
+	    <div class="btn" id="volumeBtn"></div>
+	  </div>
+
+	  <!-- Progress -->
+	  <div id="waveform"></div>
+	  <div id="bar"></div>
+	  <div id="progress"></div>
+
+	  <!-- Playlist -->
+	  <div id="playlist">
+	    <div id="list"></div>
+	  </div>
+
+	  <!-- Volume -->
+	  <div id="volume" class="fadeout">
+	    <div id="barFull" class="bar"></div>
+	    <div id="barEmpty" class="bar"></div>
+	    <div id="sliderBtn"></div>
+	  </div>
+
+	  <!-- Scripts -->
+ 	 <script src="../../src/howler.core.js"></script>
+ 	 <script src="./siriwave.js"></script>
+ 	 <script src="./player.js"></script>
+	</body>
+<!--end of audio player-->
+
+<!--beginning of footer-->
+	<footer>Site Name Here | San Luis Obispo, CA | <a href="mailto: bvollrat@calpoly.edu" target="_top">Send Email</a> | Copyright 2020 | Site by Brett Vollrath
+	</footer>
+<!--end of footer-->
 
 <!--the following script controls the responsive navigation-->
 <script>

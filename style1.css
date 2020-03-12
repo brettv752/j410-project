@@ -7,6 +7,17 @@
 	padding-top: 35px;
 }
 
+#myProgress {
+  width: 100%;
+  background-color: grey;
+}
+
+#myBar {
+  width: 1%;
+  height: 30px;
+  background-color: green;
+}
+
 body {
 	color: black; /*(default font color for the entire page)*/
 	font-family: 'Open Sans', sans-serif;

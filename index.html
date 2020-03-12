@@ -141,30 +141,6 @@ function topFunction() {
             </ul>
         </nav>
     </div>
-    <!--beginning of progress bar-->
-<div id="myProgress">
-  <div id="myBar"></div>
-	<script>var i = 0;
-function move() {
-  if (i == 0) {
-    i = 1;
-    var elem = document.getElementById("myBar");
-    var width = 1;
-    var id = setInterval(frame, 10);
-    function frame() {
-      if (width >= 100) {
-        clearInterval(id);
-        i = 0;
-      } else {
-        width++;
-        elem.style.width = width + "%";
-      }
-    }
-  }
-} 
-</script>
-</div>
-    <!--end of progress bar-->
     <!--closing navigation tag-->
 </header>
 <!--end of navigation section-->
@@ -285,6 +261,30 @@ function move() {
 
 <!--beginning of footer-->
 <footer>Site Name Here | San Luis Obispo, CA | <a href="mailto: bvollrat@calpoly.edu" target="_top">Send Email</a> | Copyright 2020 | Site by Brett Vollrath
+    <!--beginning of progress bar-->
+<div id="myProgress">
+  <div id="myBar"></div>
+	<script>var i = 0;
+function move() {
+  if (i == 0) {
+    i = 1;
+    var elem = document.getElementById("myBar");
+    var width = 1;
+    var id = setInterval(frame, 10);
+    function frame() {
+      if (width >= 100) {
+        clearInterval(id);
+        i = 0;
+      } else {
+        width++;
+        elem.style.width = width + "%";
+      }
+    }
+  }
+} 
+</script>
+</div>
+    <!--end of progress bar-->
 </footer>
 <!--end of footer-->
 

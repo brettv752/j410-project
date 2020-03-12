@@ -334,12 +334,12 @@ p {
   
 .cycle-prev { 
   left: 0;
-  background: url(img/arrow_left.png) 50% 50% no-repeat;
+  background: url(img/arrowleft.png) 50% 50% no-repeat;
   }
   
 .cycle-next { 
 right: 0;
-background: url(img/arrow_right.png) 50% 50% no-repeat;
+background: url(img/arrowright.png) 50% 50% no-repeat;
 }
 
 .cycle-prev:hover, .cycle-next:hover { 

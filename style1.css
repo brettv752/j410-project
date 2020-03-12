@@ -7,17 +7,6 @@
 	padding-top: 35px;
 }
 
-#myProgress {
-  width: 100%;
-  background-color: grey;
-}
-
-#myBar {
-  width: 1%;
-  height: 30px;
-  background-color: green;
-}
-
 body {
 	color: black; /*(default font color for the entire page)*/
 	font-family: 'Open Sans', sans-serif;
@@ -35,6 +24,26 @@ header {
     transition: top 0.2s ease-in-out;
     background-color: #b9b8b8;
     opacity: 0.75;
+}
+
+#myBar {
+  width: 10%;
+  height: 30px;
+  background-color: #4CAF50;
+  text-align: center; /* To center it horizontally (if you want) */
+  line-height: 30px; /* To center it vertically */
+  color: white;
+}
+
+#myProgress {
+  width: 100%;
+  background-color: grey;
+}
+
+#myBar {
+  width: 1%;
+  height: 30px;
+  background-color: green;
 }
 
 /*----------------navigation container-----------------*/

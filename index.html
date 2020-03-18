@@ -250,7 +250,8 @@ function topFunction() {
 <!--end of video section-->
 
 <!--beginning of infographic section-->
-<div class="row whiteBG">
+<body>
+	<div class="row whiteBG">
     <h2 id="num">Music Production Clubs Across The US</h2>
     <article>
         <p class="tab"></p>
@@ -284,7 +285,7 @@ function topFunction() {
     />    <div class="currentTime"></div>
     <div class="durationTime"></div>
   </div>
-<script>const background = document.querySelector('#background'); // background derived from album cover below
+	<script>const background = document.querySelector('#background'); // background derived from album cover below
 const thumbnail = document.querySelector('#thumbnail'); // album cover 
 const song = document.querySelector('#song'); // audio object
 
@@ -388,7 +389,8 @@ setInterval(updateProgressValue, 500);
 function changeProgressBar() {
     song.currentTime = progressBar.value;
 };
-</script>
+	</script>
+</body>
 <!--end of audio player-->
 
 <!--beginning of footer-->

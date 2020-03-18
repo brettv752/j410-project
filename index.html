@@ -260,47 +260,30 @@ function topFunction() {
 <!--end of infographic section-->
 
 <!--beginning of audio player-->
-  <!-- Top Info -->
-	  <div id="MPU Music Player">
-	    <span id="track"></span>
-	    <div id="timer">0:00</div>
-	    <div id="duration">0:00</div>
-	  </div>
-
-  <!-- Controls -->
-	  <div class="controlsOuter">
- 	   <div class="controlsInner">
- 	     <div id="loading"></div>
- 	     <div class="btn" id="playBtn"></div>
-	      <div class="btn" id="pauseBtn"></div>
- 	     <div class="btn" id="prevBtn"></div>
-	      <div class="btn" id="nextBtn"></div>
- 	   </div>
-	    <div class="btn" id="playlistBtn"></div>
-	    <div class="btn" id="volumeBtn"></div>
-	  </div>
-
-	  <!-- Progress -->
-	  <div id="waveform"></div>
-	  <div id="bar"></div>
-	  <div id="progress"></div>
-
-	  <!-- Playlist -->
-	  <div id="playlist">
-	    <div id="list"></div>
-	  </div>
-
-	  <!-- Volume -->
-	  <div id="volume" class="fadeout">
-	    <div id="barFull" class="bar"></div>
-	    <div id="barEmpty" class="bar"></div>
-	    <div id="sliderBtn"></div>
-	  </div>
-
-	  <!-- Scripts -->
- 	 <script src="../../src/howler.core.js"></script>
- 	 <script src="j410-project/player/siriwave.js"></script>
- 	 <script src="j410-project/player/player.js"></script>
+<img src="j410-project/img/lemonade.png" id="background" />
+  <audio src="j410-project/audio/Gazebo Dreams.mp3" id="song"></audio>
+	<div class="container">
+    	<div class="box"></div>
+    <img src="j410-project/img/lemonade.png" id="thumbnail" />
+    <img src="j410-project/img/play.png" onclick="playPause()"     
+    id="play-pause" />
+    <img src="j410-project/img/forward.png" onclick="nextSong()"
+    id="next-song" />
+    <img src="j410-project/img/backward.png" onclick="previousSong()" 
+    id="previous-song" />
+	<div class="song-artist">Cal Poly MPU</div>
+  	<div class="song-title">Gazebo Dreams</div>    <!-- Input element for progress bar - min=0 starting value of  
+    every song - max length will change per song so leave empty -->
+    <input
+      type="range"
+      id="progress-bar"
+      min="0"
+      max=""
+      value="0"
+      onchange="changeProgressBar()"
+    />    <div class="currentTime"></div>
+    <div class="durationTime"></div>
+  </div>
 <!--end of audio player-->
 
 <!--beginning of footer-->

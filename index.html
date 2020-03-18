@@ -268,10 +268,6 @@ function topFunction() {
     <img src="j410-project/img/lemonade.png" id="thumbnail" />
     <img src="j410-project/img/play.png" onclick="playPause()"     
     id="play-pause" />
-    <img src="j410-project/img/forward.png" onclick="nextSong()"
-    id="next-song" />
-    <img src="j410-project/img/backward.png" onclick="previousSong()" 
-    id="previous-song" />
 	<div class="song-artist">Cal Poly MPU</div>
   	<div class="song-title">Gazebo Dreams</div>    <!-- Input element for progress bar - min=0 starting value of  
     every song - max length will change per song so leave empty -->
@@ -325,40 +321,6 @@ function playPause() {
 song.addEventListener('ended', function(){
     nextSong();
 });
-
-// function where songIndex is incremented, song/thumbnail image/background image/song artist/song title changes to next index value, and playPause() runs to play next track 
-function nextSong() {
-    songIndex++;
-    if (songIndex > 1) {
-        songIndex = 0;
-    };
-    song.src = songs[songIndex];
-    thumbnail.src = thumbnails[songIndex];
-    background.src = thumbnails[songIndex];
-
-    songArtist.innerHTML = songArtists[songIndex];
-    songTitle.innerHTML = songTitles[songIndex];
-
-    playing = true;
-    playPause();
-}
-
-// function where songIndex is decremented, song/thumbnail image/background image/song artist/song title changes to previous index value, and playPause() runs to play previous track 
-function previousSong() {
-    songIndex--;
-    if (songIndex < 0) {
-        songIndex = 1;
-    };
-    song.src = songs[songIndex];
-    thumbnail.src = thumbnails[songIndex];
-    background.src = thumbnails[songIndex];
-
-    songArtist.innerHTML = songArtists[songIndex];
-    songTitle.innerHTML = songTitles[songIndex];
-
-    playing = true;
-    playPause();
-}
 
 // update progressBar.max to song object's duration, same for progressBar.value, update currentTime/duration DOM
 function updateProgressValue() {

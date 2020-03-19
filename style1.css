@@ -363,7 +363,7 @@ filter: alpha(opacity=70)
 
 /*----------------VIDEO-----------------*/
 video {
-    position: relative;
+    position: center;
     width: 100%;    
 }
 

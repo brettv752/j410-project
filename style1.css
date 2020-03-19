@@ -425,7 +425,7 @@ footer a:hover {
 }
 
 .greenBG {
-	background: -webkit-linear-gradient(right,#3B5948,#4F7352,#85A66D);
+	background: -webkit-linear-gradient(left,#3B5948,#4F7352,#85A66D);
 }
 
 /*----------------back to top button-----------------*/

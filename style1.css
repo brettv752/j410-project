@@ -8,7 +8,7 @@
 }
 
 body {
-	color: black; /*(default font color for the entire page)*/
+	color: #011826; /*(default font color for the entire page)*/
 	font-family: 'Open Sans', sans-serif;
 	font-weight: 300; /*(font thickness)*/
 }
@@ -93,7 +93,7 @@ nav ul li a:visited {
 }
 nav ul li a:hover,
 nav ul li a:visited:hover {
-    background-color: black;
+    background-color: #011826;
     color: white;
 }
 nav ul li a:not(:only-child):after,
@@ -123,7 +123,7 @@ a.text:link, a.text:visited {
 }
 a.text:hover, a.text:active {
     background-color: white;
-    color: black;
+    color: #011826;
 }
 .row a{
 	color: #1e1f32;
@@ -350,7 +350,7 @@ filter: alpha(opacity=70)
 
 /* captions below slideshow*/
 #alt-caption {
-    background-color: black;
+    background-color: #011826;
     color: #ffffff;
     font-family: 'Open Sans', sans-serif;
     font-size: .9em;
@@ -425,7 +425,7 @@ footer a:hover {
 }
 
 .orangeBG {
-	background: -webkit-linear-gradient(left,#3B5948,#4F7352,#85A66D);
+	background: -webkit-linear-gradient(right,#3B5948,#85A66D,white);
 }
 
 /*----------------back to top button-----------------*/
@@ -447,7 +447,7 @@ footer a:hover {
 }
 
 #myBtn:hover {
-  background-color: darkblue;
+  background-color: #011826;
   opacity: 0.75;   
 }
 

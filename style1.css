@@ -421,11 +421,11 @@ footer a:hover {
 }
 
 .blueBG {
-	background: -webkit-linear-gradient(left,black,grey,white);
+	background: -webkit-linear-gradient(left,#011826,#A7CBD9,white);
 }
 
 .orangeBG {
-	background: -webkit-linear-gradient(left,purple,white,gold);
+	background: -webkit-linear-gradient(left,#3B5948,#4F7352,#85A66D);
 }
 
 /*----------------back to top button-----------------*/
@@ -437,8 +437,8 @@ footer a:hover {
   z-index: 99; /* Make sure it does not overlap */
   border: none; /* Remove borders */
   outline: none; /* Remove outline */
-  background-color: #3B5948; /* Set a background color */
-  color: black; /* Text color */
+  background-color:#85A66D; /* Set a background color */
+  color: #011826; /* Text color */
   cursor: pointer; /* Add a mouse pointer on hover */
   padding: 15px; /* Some padding */
   border-radius: 10px; /* Rounded corners */

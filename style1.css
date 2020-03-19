@@ -368,7 +368,6 @@ video {
 }
 
 /*-------------MUSIC PLAYER--------------*/
-player {
 .container {
     position: absolute;
     height: 300pt;

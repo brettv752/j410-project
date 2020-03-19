@@ -157,7 +157,7 @@ function topFunction() {
 <div class="row whiteBG">
     <h2 id="home">About the MPU</h2>
     <article>
-        <p class="tab">Blurb 1<br><br>Blurb 2</p>
+        <p class="tab">Started in 2014, Cal Poly SLO's Music Production Union has become a dedicated space for musicians to gather, create and perform among their peers. <br><br>Blurb 2</p>
         <p class="tab"><a href="#gal">Navigation</a></p>
     </article>
 </div>
@@ -291,10 +291,10 @@ const progressBar = document.querySelector('#progress-bar'); // element where pr
 let pPause = document.querySelector('#play-pause'); // element where play and pause image appears
 
 songIndex = 0;
-songs = ['./assets/music/beyonce.mp3', './assets/music/dontstartnow.mp3']; // object storing paths for audio objects
-thumbnails = ['./assets/images/lemonade.png', './assets/images/dontstartnow.png']; // object storing paths for album covers and backgrounds
-songArtists = ['Beyonce', 'Dua Lipa']; // object storing track artists
-songTitles = ["Don't Hurt Yourself", "Don't Start Now"]; // object storing track titles
+songs = ['j410-project/audio/Gazebo Dreams.mp3']; // object storing paths for audio objects
+thumbnails = ['./assets/images/lemonade.png']; // object storing paths for album covers and backgrounds
+songArtists = ['Cal Poly MPU']; // object storing track artists
+songTitles = ["Don't Hurt Yourself"]; // object storing track titles
 
 // function where pp (play-pause) element changes based on playing boolean value - if play button clicked, change pp.src to pause button and call song.play() and vice versa.
 let playing = true;
@@ -316,11 +316,6 @@ function playPause() {
         playing = true;
     }
 }
-
-// automatically play the next song at the end of the audio object's duration
-song.addEventListener('ended', function(){
-    nextSong();
-});
 
 // update progressBar.max to song object's duration, same for progressBar.value, update currentTime/duration DOM
 function updateProgressValue() {

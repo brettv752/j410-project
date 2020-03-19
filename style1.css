@@ -159,7 +159,7 @@ a.text:hover, a.text:active {
 @media only screen and (max-width: 800px) {
 
     h2 {
-	font-family: 'Cinzel', serif;
+	font-family: 'Archivo Narrow', sans-serif;
         font-size: 35px !important;
     }
   .nav-mobile {
@@ -294,7 +294,7 @@ h1 {
 }
 
 h2 {
-    font-family: 'Lacquer', cursive;
+    font-family: 'Archivo Narrow', sans-serif;
     text-align: center;
     font-size: 55px;
     text-transform: uppercase;

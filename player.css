@@ -58,7 +58,7 @@ body {
     position: absolute;
     z-index: 4;
     color: rgb(193, 255, 6);
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Montserrat', sans-serif; /* replace */
     font-weight: bold;
     font-size: 20px;
     bottom: 21%;
@@ -70,7 +70,7 @@ body {
     position: absolute;
     z-index: 4;
     color: white;
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Montserrat', sans-serif; /* replace */
     font-size: 17px;
     bottom: 16%;
     left: 28%;
@@ -89,29 +89,6 @@ body {
     left: 9%;
 }
 
-/* style for next and previous song images */
-#next-song, #previous-song {
-    position: absolute;
-    height: 30px;
-    width: 30px;
-    filter: invert(1);
-    cursor: pointer;
-    bottom: 13.5%;
-    font-size: 40px;
-    z-index: 4;
-}
-
-/* unique style for next song image */
-#next-song {
-    right: 10%;
-}
-
-/* unique style for previous song image */
-#previous-song {
-    right: 10.3%;
-    bottom: 21.5%;
-}
-
 /* style for current time of the track */
 .currentTime {
     position: absolute;
@@ -121,7 +98,7 @@ body {
     bottom: -7.5%;
     left: 17%;
     z-index: 4;
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Montserrat', sans-serif; /* replace */
     font-size: 13px;
     color: white;
     align-items: center;
@@ -136,7 +113,7 @@ body {
     bottom: -1%;
     right: 11%;
     z-index: 4;
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Montserrat', sans-serif; /* replace */
     font-size: 13px;
     align-items: center;
     color: rgb(193, 255, 6);
